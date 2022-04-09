@@ -23,83 +23,93 @@ h1 {
   margin-left: 20px;
 }
 
-form {
-  margin-right: 30px;
+sup {
+  color: red;
 }
+
+/* form {
+  margin-right: 30px;
+} */
 
 #recipe-button {
-  margin-top: 30px;
-  border-top-width: 0px;
+  margin-top: 15px;
   margin-right: 20px;
-  height: 0%;
-  width: 10%;
-}
-main {
-  margin-top: 100px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+  height: 80%;
+  width: 180px;
+  border-radius: 10px;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.left-container, .right-container {
+    background-color: rgba(225, 225, 225, .9);
+    height: 600px;
+    width: 600px;
+  }
+
+.cookpot {
+  margin-top: 200px;
+  height: 200px;
+  width: 200px;
+}
 
 .left-container {
-    background-color: rgba(225, 225, 225, .9);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 800px;
-    margin-top: 50px;
-    /* margin-bottom: 80px; */
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 }
 
 h2 {
-  margin-left: 20px;
-
+  font-size: 2em;
 }
 
+h2, div, .cook-button {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
 
+label {
+  font-size: 1.5em;
+}
 
+.cook-button {
+  font-size: 1.3em;
+  background-color: #0fb9b1;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+}
 
-.cookpot {
-  background-color: rgba(225, 225, 225, .9);
-  height: 50%;
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-	align-items: center;
+.clear-button {
+  font-size: 1.3em;
+  background-color: #95a5a6;
+  color: white;
+  width: 90px;
+  height: 50px;
+  margin-left: 400px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 
 /* COLORS
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
-red - #ee5253 */ */
-
-/* ~~~~~ GLOBAL RULES ~~~~~ */
-
-
-/* button,
-input {
-  font-size: 20px;
-  padding: 10px 20px;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: stretch;
-} */
-
-/* button { */
-  background: black;
-  border: none;
-  border-radius: 10px;
-  color: white;
-}
+/* red - #ee5253 */
