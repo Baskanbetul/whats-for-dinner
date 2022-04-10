@@ -29,9 +29,9 @@ Visit **What's for dinner?** to choose your own recipe each day. Choose a recipe
 
 ## Illustrations
 
-![IdeaBox gif](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_0.png)
+![What's for dinner?](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_0.png)
 
-![IdeaBox gif](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_1.png)
+![What's for dinner?](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_1.png)
 
 
 ## Possible Future Extensions

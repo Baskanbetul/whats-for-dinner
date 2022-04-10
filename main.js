@@ -87,26 +87,3 @@ buttonLetsCook.addEventListener("click", letsCook);
     rightContainer.classList.add('hidden');
     clearButton.classList.remove('hidden');
 }
-
-
-
-
-
-
-
-
-
-// function letsCook() {
-//   console.log(getRandom(sides));
-//     if (side.checked) {
-//      showItem.innerText = `${getRandom(sides)}!`
-//    } else if (mainDish.checked) {
-//      showItem.innerText = `${getRandom(mains)}!`
-//    } else if (dessert.checked) {
-//      showItem.innerText = `${getRandom(desserts)}`
-//    }
-//
-//   recipe.classList.remove('hidden');
-//   rightContainer.classList.add('hidden');
-//   clearButton.classList.remove('hidden');
-// }
