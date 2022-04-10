@@ -108,6 +108,9 @@ label {
   border-radius: 5px;
 }
 
+.hidden {
+  display: none!important;
+}
 
 /* COLORS
 frosted white - rgba(225, 225, 225, .9);

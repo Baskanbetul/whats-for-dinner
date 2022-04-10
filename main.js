@@ -2,10 +2,17 @@
 // query selector
 var buttonLetsCook = document.querySelector('.cook-button');
 var rightContainer = document.querySelector('.cookpot');
-var pickSides = document.getElementsByName('decide');
+var side = document.querySelector('#radio-side');
+var mainDish = document.querySelector('#radio-main-dish');
+var dessert = document.querySelector('#radio-dessert');
+var clearButton = document.querySelector('.clear-button');
+
 var recipe = document.querySelector('.recipe');
+
+
 // var pickMainDish = document.querySelector('.recipe')
 // var pickDesserts = document.querySelector('.recipe')
+var showItem = document.querySelector('p')
 
 // Arrays
 var sides = [
@@ -59,12 +66,7 @@ var desserts = [
 ]
 
 // eventListener
-// window.addEventListener("load", letsCook);
-
 buttonLetsCook.addEventListener("click", letsCook);
-
-// buttonLetsCook.addEventListener("click", letsCook);
-
 
 // functions
 
@@ -72,34 +74,15 @@ buttonLetsCook.addEventListener("click", letsCook);
     return array[Math.floor(Math.random() * array.length)];
 };
 
-// function letsCook() {
-// var newSides = getRandomIndex(sides);
-// var newMains = getRandomIndex(mains);
-// var newDesserts = getRandomIndex(desserts);
-// postSides.innerText = newSides;
-// rightContainer.classList.add('hidden');
-// postMains.innerText = newMains;
-// postDesserts.innerText = newDesserts;
-// postSides.innerText = `You should make ${newSides} || ${newMains}!`;
-// rightContainer.classList.add('hidden');
-// }
-
-//   function letsCook() {
-//     var newSides = getRandom(sides);
-//     for (var i = 0; i < pickSides.length; i++) {
-//       if (pickSides[i].checked) {
-//         showRecipe(pickSides[i].value) ;
-//     // = `You should make ${[i]}!`;
-//   }
-// }
-//     rightContainer.classList.add('hidden');
-// }
-//   showRecipe() {
-//
-//
-//  }
-
-
-
-// We want to hide cookpot
-// We want to show one of them at each time not all of them ,use if
+  function letsCook() {
+    console.log(getRandom(sides));
+      if (side.checked) {
+       showItem.innerText = `${getRandom(sides)}!`
+     } else if (mainDish.checked) {
+       showItem.innerText = `${getRandom(mains)}!`
+     } else if (dessert.checked) {
+       showItem.innerText = `${getRandom(desserts)}`
+     }
+    rightContainer.classList.add('hidden');
+    clearButton.classList.remove('hidden');
+}
