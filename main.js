@@ -83,6 +83,7 @@ buttonLetsCook.addEventListener("click", letsCook);
      } else if (dessert.checked) {
        showItem.innerText = `${getRandom(desserts)}`
      }
+    recipe.classList.remove('hidden');
     rightContainer.classList.add('hidden');
     clearButton.classList.remove('hidden');
 }
