@@ -7,11 +7,9 @@ var mainDish = document.querySelector('#radio-main-dish');
 var dessert = document.querySelector('#radio-dessert');
 var clearButton = document.querySelector('.clear-button');
 
+var entireMeal = document.querySelector('#radio-entire-meal')
+
 var recipe = document.querySelector('.recipe');
-
-
-// var pickMainDish = document.querySelector('.recipe')
-// var pickDesserts = document.querySelector('.recipe')
 var showItem = document.querySelector('p')
 
 // Arrays
@@ -82,8 +80,33 @@ buttonLetsCook.addEventListener("click", letsCook);
        showItem.innerText = `${getRandom(mains)}!`
      } else if (dessert.checked) {
        showItem.innerText = `${getRandom(desserts)}`
+     } else if (entireMeal.checked) {
+       showItem.innerText = `${getRandom(mains)} with a side of ${getRandom(sides)} and ${getRandom(desserts)} for dessert!`
      }
     recipe.classList.remove('hidden');
     rightContainer.classList.add('hidden');
     clearButton.classList.remove('hidden');
 }
+
+
+
+
+
+
+
+
+
+// function letsCook() {
+//   console.log(getRandom(sides));
+//     if (side.checked) {
+//      showItem.innerText = `${getRandom(sides)}!`
+//    } else if (mainDish.checked) {
+//      showItem.innerText = `${getRandom(mains)}!`
+//    } else if (dessert.checked) {
+//      showItem.innerText = `${getRandom(desserts)}`
+//    }
+//
+//   recipe.classList.remove('hidden');
+//   rightContainer.classList.add('hidden');
+//   clearButton.classList.remove('hidden');
+// }
