@@ -84,20 +84,20 @@ buttonLetsCook.addEventListener("click", letsCook);
 // rightContainer.classList.add('hidden');
 // }
 
-  function letsCook() {
-    var newSides = getRandom(sides);
-    for (var i = 0; i < pickSides.length; i++) {
-      if (pickSides[i].checked) {
-        showRecipe(pickSides[i].value) ;
-    // = `You should make ${[i]}!`;
-  }
-}
-    rightContainer.classList.add('hidden');
-}
-  showRecipe() {
-    
-
- }
+//   function letsCook() {
+//     var newSides = getRandom(sides);
+//     for (var i = 0; i < pickSides.length; i++) {
+//       if (pickSides[i].checked) {
+//         showRecipe(pickSides[i].value) ;
+//     // = `You should make ${[i]}!`;
+//   }
+// }
+//     rightContainer.classList.add('hidden');
+// }
+//   showRecipe() {
+//
+//
+//  }
 
 
 
